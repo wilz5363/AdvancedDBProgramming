@@ -13,10 +13,10 @@
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul class="nav navbar-nav">
-			<li <?php if($section == 'rent'){echo 'class="active"';}?>><a href="">RENT</a></li>
-			<li <?php if($section == 'car'){echo 'class="active"';}?>><a href="#">CAR</a></li>
-            <li <?php if($section == 'customer'){echo 'class="active"';}?>><a href="#">CUSTOMER</a></li>
-            <li <?php if($section == 'car_category'){echo 'class="active"';}?>><a href="#">CAR CATALOG</a></li>
+			<li <?php if($section == 'rent'){echo 'class="active"';}?>><a href="<?php echo BASE_URL.'index.php';?>">RENT</a></li>
+			<li <?php if($section == 'car'){echo 'class="active"';}?>><a href="<?php echo BASE_URL.'car.php';?>">CAR</a></li>
+            <li <?php if($section == 'customer'){echo 'class="active"';}?>><a href="<?php echo BASE_URL.'customer.php';?>">CUSTOMER</a></li>
+            <li <?php if($section == 'car_category'){echo 'class="active"';}?>><a href="<?php echo BASE_URL.'car_category.php';?>">CAR CATALOG</a></li>
 		</ul>
 	</div><!-- /.navbar-collapse -->
 </nav>
