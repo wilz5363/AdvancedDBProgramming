@@ -20,6 +20,7 @@ $db_username = "wilson";
 $db_password = "chanwilson";
 try{
     $conn = new PDO("oci:dbname=".$tns,$db_username,$db_password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }catch(PDOException $e){
     echo ($e->getMessage());
 }

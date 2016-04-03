@@ -11,6 +11,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $color = $_POST['colorInput'];
     $category = $_POST['category'];
 
+//    var_dump($plateno, $model, $color, $category);
+
+    $stmt = $conn->prepare('begin insert_car_proc(?,?,?,?); end;');
+    try{
+        $stmt->bindParam(1, $plateno);
+        $stmt->bindParam(2, $model);
+        $stmt->bindParam(3, $color);
+        $stmt->bindParam(4, $category);
+        $exe = $stmt->execute();
+    }catch(PDOException $e){
+        if($e->errorInfo[1] == '1'){
+            echo 'Duplicated Car Inserted';
+        }
+    }
 
 
 }
