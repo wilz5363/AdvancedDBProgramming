@@ -1,14 +1,36 @@
 <?php
 $section = 'customer';
-include 'inc\head.php';?>
+include 'inc\head.php';
+
+if($_SERVER['REQUEST_METHOD']=='POST'){
+	$name = $_POST['nameInput'];
+	$nric = $_POST['nricInput'];
+	$address = $_POST['addressInput'];
+	$postcode = $_POST['postcodeInput'];
+	$city = $_POST['cityInput'];
+
+	var_dump($name,$nric, $address,$postcode, $city);
+}
+
+
+
+
+
+
+
+
+
+
+
+?>
 <h1>CUSTOMER</h1>
-<a class="btn btn-primary" data-toggle="modal" href="#modal-id">Trigger modal</a>
+<a class="circle" data-toggle="modal" href="#modal-id">Trigger modal</a>
 <div class="modal fade" id="modal-id">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">Modal title</h4>
+				<h4 class="modal-title">New Customer</h4>
 			</div>
 			<div class="modal-body">
 				<form action="" method="post" role="form">
@@ -22,7 +44,7 @@ include 'inc\head.php';?>
                     </div>
                     <div class="form-group">
                         <label for="customerAddress">Address: </label>
-                        <input type="text" class="form-control" name="customerInput" id="customerAddress" required>
+                        <input type="text" class="form-control" name="addressInput" id="customerAddress" required>
                     </div>
                     <div class="form-group">
                         <label for="customerPostcode">Postcode: </label>
