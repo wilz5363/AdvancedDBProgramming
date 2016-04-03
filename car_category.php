@@ -6,22 +6,22 @@ $query = 'select * from car_category';
 $stmt = $conn->query($query)->fetchAll(PDO::FETCH_ASSOC);
 
 
-//if($_SERVER['REQUEST_METHOD'] == 'POST') {
-//    $cate_name = $_POST['nameInput'];
-//    $price = $_POST['priceInput'];
-//
-//    $query = 'begin insert_car_categ_proc(?,?);end;';
-//
-//    try{
-//        $stmt = $conn->prepare($query);
-//        $stmt->bindParam(1, $cate_name);
-//        $stmt->bindParam(2, $price);
-//        $stmt->execute();
-//        echo 'success';
-//    }catch(Exception $e){
-//        $e->getMessage();
-//    }
-//}
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $cate_name = $_POST['nameInput'];
+    $price = $_POST['priceInput'];
+
+    $query = 'begin insert_car_categ_proc(?,?);end;';
+
+    try{
+        $stmt = $conn->prepare($query);
+        $stmt->bindParam(1, $cate_name);
+        $stmt->bindParam(2, $price);
+        $stmt->execute();
+        echo 'alert("Insert new category success.")';
+    }catch(Exception $e){
+        $e->getMessage();
+    }
+}
 
 ?>
 <h1>CAR CATEGORY</h1>
@@ -42,7 +42,7 @@ $stmt = $conn->query($query)->fetchAll(PDO::FETCH_ASSOC);
             <td><?php echo $result['CC_ID'];?></td>
             <td><?php echo $result['CC_NAME'];?></td>
             <td><?php echo $result['CC_PRICE'];?></td>
-            <td><a>Edit</a></td>
+            <td><a href="category_edit.php?id=<?php echo  $result['CC_ID']; ?>">Edit</a></td>
         </tr>
         <?php
     }
