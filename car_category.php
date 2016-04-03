@@ -24,6 +24,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 ?>
+<div class="container">
 <h1>CAR CATEGORY</h1>
 <table class="table table-hover">
 	<thead>
@@ -50,7 +51,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	</tbody>
 </table>
-
+</div>
 <a class="btn btn-primary" data-toggle="modal" href="#modal-id" style="bottom:5%; right: 5%;position: fixed; border-radius: 50%; font-size: 45px; width:70px;height:70px;text-align: center;line-height:60px">+</a>
 <div class="modal fade" id="modal-id">
 	<div class="modal-dialog">
