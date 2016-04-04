@@ -2,6 +2,9 @@
 $section = 'customer';
 include 'inc\head.php';
 
+$select_query = 'select * from customer';
+$customers = $conn->query($select_query)->fetchAll(PDO::FETCH_ASSOC);
+
 if($_SERVER['REQUEST_METHOD']=='POST'){
 	$name = $_POST['nameInput'];
 	$nric = $_POST['nricInput'];
@@ -24,19 +27,42 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 		echo $e->getMessage();
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
 ?>
-<h1>CUSTOMER</h1>
+
+<div class="container">
+    <h1>CUSTOMER</h1>
+    <table class="table table-hover">
+    	<thead>
+    		<tr>
+                <th>Customer ID</th>
+                <th>Name</th>
+                <th>NRIC</th>
+                <th>Address</th>
+                <th>Postcode</th>
+                <th>City</th>
+                <th>Free Ride</th>
+                <th>Registered On</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<?php foreach ($customers as $customer){?>
+                <tr>
+                    <td><?php echo $customer['CUSTOMER_ID'];?></td>
+                    <td><?php echo $customer['CUSTOMER_NAME'];?></td>
+                    <td><?php echo $customer['CUSTOMER_NRIC'];?></td>
+                    <td><?php echo $customer['CUSTOMER_ADDRESS'];?></td>
+                    <td><?php echo $customer['CUSTOMER_POSTCODE'];?></td>
+                    <td><?php echo $customer['CUSTOMER_CITY'];?></td>
+                    <td><?php echo $customer['CUSTOMER_FREE_RIDE'];?></td>
+                    <td><?php echo $customer['CREATED_ON'];?></td>
+                    <td><a class="btn btn-info" href="customer_edit.php?=<?php echo $customer['CUSTOMER_ID'];?>">Edit</a></td>
+                </tr>
+            <?php } ?>
+    	</tbody>
+    </table>
+</div>
+
+
 <a class="btn btn-primary" data-toggle="modal" href="#modal-id" style="bottom:5%; right: 5%;position: fixed; border-radius: 50%; font-size: 45px; width:70px;height:70px;text-align: center;line-height:60px">+</a>
 <div class="modal fade" id="modal-id">
 	<div class="modal-dialog">

@@ -45,7 +45,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <td><?php echo $result['CC_ID'];?></td>
             <td><?php echo $result['CC_NAME'];?></td>
             <td><?php echo $result['CC_PRICE'];?></td>
-            <td><a href="category_edit.php?id=<?php echo  $result['CC_ID']; ?>">Edit</a></td>
+            <td><a class="btn btn-info" href="category_edit.php?id=<?php echo  $result['CC_ID']; ?>">Edit</a></td>
         </tr>
         <?php
     }

@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <td><?php echo $car['CAR_COLOR'];?></td>
                 <td><?php echo $car['CAR_STATUS'];?></td>
                 <td><?php echo $car['CC_NAME'];?></td>
-                <td><a href="car_edit.php?id=<?php echo  $car['CAR_ID']; ?>">Edit</a></td>
+                <td><a class="btn btn-info" href="car_edit.php?id=<?php echo  $car['CAR_ID']; ?>">Edit</a></td>
             </tr>
         <?php } ?>
         </tbody>
