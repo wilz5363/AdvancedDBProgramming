@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7a9aa99c-c6ea-4593-ab93-7498a269ddb7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/car.php" afterPath="$PROJECT_DIR$/car.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/car_category.php" afterPath="$PROJECT_DIR$/car_category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/car_edit.php" afterPath="$PROJECT_DIR$/car_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/category_edit.php" afterPath="$PROJECT_DIR$/category_edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer.php" afterPath="$PROJECT_DIR$/customer.php" />
     </list>
     <ignored path="ADP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,95 +27,92 @@
     <favorites_list name="ADP" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="customer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/customer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="13" column="113" selection-start-line="13" selection-start-column="112" selection-end-line="13" selection-end-column="113" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="car.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/car.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43965518">
-              <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-              <folding>
-                <marker date="1459698555414" expanded="true" signature="60:200" placeholder="select c.car... car" />
-                <marker date="1459698555414" expanded="true" signature="278:304" placeholder="select * fro... car_category" />
-                <marker date="1459698555414" expanded="true" signature="1037:1905" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="1092:1898" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="1982:2115" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="2160:3889" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="2191:3889" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="2227:3889" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="2266:2454" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="2491:3889" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="2545:3889" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="2591:2841" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="2763:2814" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="2887:3132" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="3054:3105" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="3178:3419" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="3341:3392" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="3465:3889" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="3628:3889" placeholder="..." />
-                <marker date="1459698555414" expanded="true" signature="4278:4297" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="car_edit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car_edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="car_category.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/car_category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.346154">
-              <caret line="45" column="93" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="93" />
-              <folding>
-                <marker date="1459696191859" expanded="true" signature="68:94" placeholder="select * fro... car_category" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="customer.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/customer.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-5.230769">
+                  <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-3.9230769">
+                  <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="car.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/car.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-11.769231">
+                  <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+                  <folding>
+                    <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                    <marker date="1459698555414" expanded="true" signature="60:200" placeholder="select c.car... car" />
+                    <marker date="1459698555414" expanded="true" signature="278:304" placeholder="select * fro... car_category" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="car_edit.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/car_edit.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.41034484">
+                  <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+                  <folding>
+                    <marker date="1459748207881" expanded="true" signature="71:97" placeholder="select * fro... car_category" />
+                    <marker date="1459748207881" expanded="true" signature="353:385" placeholder="select * fro... car" />
+                    <marker date="1459748207881" expanded="true" signature="353:386" placeholder="select * fro... car" />
+                    <marker date="1459748207881" expanded="true" signature="353:400" placeholder="select * fro... car" />
+                    <marker date="1459748207881" expanded="true" signature="353:401" placeholder="select * fro... car" />
+                    <marker date="1459748207881" expanded="true" signature="353:617" placeholder="select * fro... car" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="car_category.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/car_category.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-13.076923">
+                  <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+                  <folding>
+                    <marker date="1459744581281" expanded="true" signature="68:94" placeholder="select * fro... car_category" />
+                    <marker date="1459744581281" expanded="true" signature="68:109" placeholder="select * fro... car_category" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="category_edit.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/category_edit.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.43965518">
+                  <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+                  <folding>
+                    <marker date="1459748008969" expanded="true" signature="253:306" placeholder="select * fro... car_category" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,11 +136,12 @@
         <option value="$PROJECT_DIR$/inc/footer.php" />
         <option value="$PROJECT_DIR$/inc/header.php" />
         <option value="$PROJECT_DIR$/inc/category_edit.php" />
-        <option value="$PROJECT_DIR$/category_edit.php" />
-        <option value="$PROJECT_DIR$/customer.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/car_category.php" />
         <option value="$PROJECT_DIR$/car.php" />
+        <option value="$PROJECT_DIR$/car_category.php" />
+        <option value="$PROJECT_DIR$/customer.php" />
+        <option value="$PROJECT_DIR$/category_edit.php" />
+        <option value="$PROJECT_DIR$/car_edit.php" />
       </list>
     </option>
   </component>
@@ -156,7 +157,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -185,7 +186,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,6 +220,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -280,10 +281,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11527166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11493412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -318,6 +319,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inc/dbcon.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -338,7 +355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="121" selection-start-line="18" selection-start-column="121" selection-end-line="18" selection-end-column="121" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -347,26 +363,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
             <marker date="1459698555414" expanded="true" signature="60:200" placeholder="select c.car... car" />
             <marker date="1459698555414" expanded="true" signature="278:304" placeholder="select * fro... car_category" />
-            <marker date="1459698555414" expanded="true" signature="1037:1905" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="1092:1898" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="1982:2115" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2160:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2191:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2227:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2266:2454" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2491:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2545:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2591:2841" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2763:2814" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2887:3132" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3054:3105" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3178:3419" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3341:3392" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3465:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3628:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="4278:4297" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -376,7 +375,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
-            <marker date="1459696191859" expanded="true" signature="68:94" placeholder="select * fro... car_category" />
+            <marker date="1459744581281" expanded="true" signature="68:94" placeholder="select * fro... car_category" />
+            <marker date="1459744581281" expanded="true" signature="68:109" placeholder="select * fro... car_category" />
           </folding>
         </state>
       </provider>
@@ -385,9 +385,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -411,7 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="121" selection-start-line="18" selection-start-column="121" selection-end-line="18" selection-end-column="121" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -420,26 +417,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
             <marker date="1459698555414" expanded="true" signature="60:200" placeholder="select c.car... car" />
             <marker date="1459698555414" expanded="true" signature="278:304" placeholder="select * fro... car_category" />
-            <marker date="1459698555414" expanded="true" signature="1037:1905" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="1092:1898" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="1982:2115" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2160:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2191:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2227:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2266:2454" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2491:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2545:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2591:2841" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2763:2814" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2887:3132" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3054:3105" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3178:3419" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3341:3392" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3465:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3628:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="4278:4297" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -449,7 +429,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
           <folding>
-            <marker date="1459696191859" expanded="true" signature="68:94" placeholder="select * fro... car_category" />
+            <marker date="1459744581281" expanded="true" signature="68:94" placeholder="select * fro... car_category" />
+            <marker date="1459744581281" expanded="true" signature="68:109" placeholder="select * fro... car_category" />
           </folding>
         </state>
       </provider>
@@ -458,9 +439,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -484,7 +463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="121" selection-start-line="18" selection-start-column="121" selection-end-line="18" selection-end-column="121" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -493,26 +471,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
             <marker date="1459698555414" expanded="true" signature="60:200" placeholder="select c.car... car" />
             <marker date="1459698555414" expanded="true" signature="278:304" placeholder="select * fro... car_category" />
-            <marker date="1459698555414" expanded="true" signature="1037:1905" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="1092:1898" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="1982:2115" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2160:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2191:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2227:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2266:2454" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2491:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2545:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2591:2841" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2763:2814" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2887:3132" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3054:3105" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3178:3419" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3341:3392" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3465:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3628:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="4278:4297" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -521,9 +482,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -532,7 +491,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding>
-            <marker date="1459696191859" expanded="true" signature="68:94" placeholder="select * fro... car_category" />
+            <marker date="1459744581281" expanded="true" signature="68:94" placeholder="select * fro... car_category" />
+            <marker date="1459744581281" expanded="true" signature="68:109" placeholder="select * fro... car_category" />
           </folding>
         </state>
       </provider>
@@ -600,7 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14655173">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,54 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5275862">
           <caret line="18" column="50" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="13" column="113" selection-start-line="13" selection-start-column="112" selection-end-line="13" selection-end-column="113" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/category_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding>
-            <marker date="1459695968987" expanded="true" signature="253:306" placeholder="select * fro... car_category" />
-            <marker date="1459695968987" expanded="true" signature="898:2212" placeholder="..." />
-            <marker date="1459695968987" expanded="true" signature="996:2212" placeholder="..." />
-            <marker date="1459695968987" expanded="true" signature="1121:2212" placeholder="..." />
-            <marker date="1459695968987" expanded="true" signature="1140:2205" placeholder="..." />
-            <marker date="1459695968987" expanded="true" signature="1208:2197" placeholder="..." />
-            <marker date="1459695968987" expanded="true" signature="1254:2188" placeholder="..." />
-            <marker date="1459695968987" expanded="true" signature="1328:1556" placeholder="..." />
-            <marker date="1459695968987" expanded="true" signature="1597:1824" placeholder="..." />
-            <marker date="1459695968987" expanded="true" signature="1865:2098" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,53 +590,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17586207">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3810345">
+          <caret line="13" column="113" selection-start-line="13" selection-start-column="112" selection-end-line="13" selection-end-column="113" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car_edit.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car_category.php">
+    <entry file="file://$PROJECT_DIR$/customer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.346154">
-          <caret line="45" column="93" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="93" />
-          <folding>
-            <marker date="1459696191859" expanded="true" signature="68:94" placeholder="select * fro... car_category" />
-          </folding>
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22112212">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/car.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43965518">
-          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
           <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
             <marker date="1459698555414" expanded="true" signature="60:200" placeholder="select c.car... car" />
             <marker date="1459698555414" expanded="true" signature="278:304" placeholder="select * fro... car_category" />
-            <marker date="1459698555414" expanded="true" signature="1037:1905" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="1092:1898" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="1982:2115" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2160:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2191:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2227:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2266:2454" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2491:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2545:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2591:2841" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2763:2814" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="2887:3132" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3054:3105" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3178:3419" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3341:3392" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3465:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="3628:3889" placeholder="..." />
-            <marker date="1459698555414" expanded="true" signature="4278:4297" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+          <folding>
+            <marker date="1459744581281" expanded="true" signature="68:94" placeholder="select * fro... car_category" />
+            <marker date="1459744581281" expanded="true" signature="68:109" placeholder="select * fro... car_category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/category_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43965518">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding>
+            <marker date="1459748008969" expanded="true" signature="253:306" placeholder="select * fro... car_category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41034484">
+          <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+          <folding>
+            <marker date="1459748207881" expanded="true" signature="71:97" placeholder="select * fro... car_category" />
+            <marker date="1459748207881" expanded="true" signature="353:385" placeholder="select * fro... car" />
+            <marker date="1459748207881" expanded="true" signature="353:386" placeholder="select * fro... car" />
+            <marker date="1459748207881" expanded="true" signature="353:400" placeholder="select * fro... car" />
+            <marker date="1459748207881" expanded="true" signature="353:401" placeholder="select * fro... car" />
+            <marker date="1459748207881" expanded="true" signature="353:617" placeholder="select * fro... car" />
           </folding>
         </state>
       </provider>

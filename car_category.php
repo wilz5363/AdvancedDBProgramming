@@ -2,7 +2,7 @@
 $section = 'car_category';
 include 'inc\head.php';
 
-$query = 'select * from car_category';
+$query = 'select * from car_category order by CC_ID';
 $stmt = $conn->query($query)->fetchAll(PDO::FETCH_ASSOC);
 
 
@@ -17,7 +17,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->bindParam(1, $cate_name);
         $stmt->bindParam(2, $price);
         $stmt->execute();
-        echo 'alert("Insert new category success.")';
+        echo '<script>alert("Insert new category success.")</script>';
+        header('Location:http://localhost/ADP/car_category.php');
+        exit();
     }catch(Exception $e){
         $e->getMessage();
     }

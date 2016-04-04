@@ -25,8 +25,6 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $stmt->bindParam(2,$priceInput);
     $stmt->bindParam(3,$cateId);
     if($stmt->execute()){
-
-        echo '<script>alert("Update Success.")</script>';
         header('Location: car_category.php');
         exit();
     }else{

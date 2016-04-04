@@ -9,7 +9,20 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	$postcode = $_POST['postcodeInput'];
 	$city = $_POST['cityInput'];
 
-	var_dump($name,$nric, $address,$postcode, $city);
+	$query = 'begin insert_customer_proc(?,?,?,?,?); end;';
+	try{
+		$stmt = $conn->prepare($query);
+		$stmt->bindParam(1,$name);
+		$stmt->bindParam(2,$nric);
+		$stmt->bindParam(3,$address);
+		$stmt->bindParam(4,$postcode);
+		$stmt->bindParam(5,$city);
+		$stmt->execute();
+		header('Location:http://localhost/ADP/customer.php');
+		exit();
+	}catch(PDOException $e){
+		echo $e->getMessage();
+	}
 }
 
 
