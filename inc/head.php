@@ -2,4 +2,6 @@
 include 'constant.php';
 include 'dbcon.php';
 include 'header.php';
-include 'navigation.php';
+if($section != 'login'){
+    include 'navigation.php';
+}

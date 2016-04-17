@@ -1,6 +1,8 @@
 <?php
 $section = 'rent';
-include 'inc\head.php';?>
+include 'inc\head.php';
+include 'inc\auth.php';
+?>
 <h1>RENT</h1>
 
 <a class="btn btn-primary" data-toggle="modal" href="#modal-id" style="bottom:5%; right: 5%;position: fixed; border-radius: 50%; font-size: 45px; width:70px;height:70px;text-align: center;line-height:60px">+</a>

@@ -18,5 +18,10 @@
             <li <?php if($section == 'customer'){echo 'class="active"';}?>><a href="<?php echo BASE_URL.'customer.php';?>">CUSTOMER</a></li>
             <li <?php if($section == 'car_category'){echo 'class="active"';}?>><a href="<?php echo BASE_URL.'car_category.php';?>">CAR CATALOG</a></li>
 		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a href="signout.php">Sign Out</a>
+			</li>
+		</ul>
 	</div><!-- /.navbar-collapse -->
 </nav>
