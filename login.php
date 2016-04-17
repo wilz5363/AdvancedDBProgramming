@@ -1,6 +1,6 @@
 <?php
 $section = 'login';
-$err_message = '';
+$err_message;
 include 'inc\head.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -25,6 +25,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
+<?php
+if(isset($err_message)){?>
+    <div class="alert alert-danger" style="margin: 0">
+    	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    	<strong>Oopss!</strong> <?php echo $err_message;?>
+    </div>
+<?php
+}
+?>
+
 <div class="navbar navbar-default">
     <a class="navbar-brand" href="#">Car Rental</a>
 </div>
@@ -46,7 +56,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-            <?php echo $err_message; ?>
         </div>
     </div>
 </div>
