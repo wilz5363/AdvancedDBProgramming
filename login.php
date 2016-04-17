@@ -1,26 +1,28 @@
 <?php
 $section = 'login';
-$err_message='';
+$err_message = '';
 include 'inc\head.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['usernameInput'];
     $password = $_POST['passwordInput'];
-   try{
-       $stmt = $conn->prepare('select * from staff where username = ? and password = ?');
-       $stmt->bindParam(1, $username);
-       $stmt->bindParam(2, $password);
-       $stmt->execute();
+    try {
+        $stmt = $conn->prepare('begin USER_LOGIN_PROCEDURE(?,?,?);end;');
+        $stmt->bindParam(1, $username);
+        $stmt->bindParam(2, $password);
+        $stmt->bindParam(3, $rowCount, PDO::PARAM_INPUT_OUTPUT,32);
+        $stmt->execute();
 
-       if($stmt->fetchColumn(0) == ""){
-           $err_message = 'Wrong username or password.';
-       }else {
-           $_SESSION['user'] = $username;
-           header('location:index.php');
-       }
-   }catch(PDOException $e){
 
-   }
+        if ($rowCount !=1) {
+            $err_message = 'Wrong username or password.';
+        } else if($rowCount == 1) {
+            $_SESSION['user'] = $username;
+            header('location:index.php');
+        }
+    } catch (PDOException $e) {
+        echo $e->getMessage();
+    }
 }
 ?>
 <div class="navbar navbar-default">
@@ -44,9 +46,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-            <?php echo $err_message;?>
+            <?php echo $err_message; ?>
         </div>
     </div>
 </div>
 
-<?php include 'inc\footer.php';?>
+<?php include 'inc\footer.php'; ?>
