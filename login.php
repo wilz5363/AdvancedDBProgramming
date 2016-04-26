@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $err_message = 'Wrong username or password.';
         } else if($rowCount == 1) {
             $_SESSION['user'] = $username;
+
             header('location:index.php');
         }
     } catch (PDOException $e) {

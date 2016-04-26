@@ -4,7 +4,7 @@ include 'inc\head.php';
 $get_all = 'select c.car_id, c.car_plate, c.car_model, c.car_color, c.car_status, cc.cc_name from car c, CAR_CATEGORY cc where c.CAR_CATEGORY = cc.CC_ID';
 $show_all = $conn->query($get_all)->fetchAll(PDO::FETCH_ASSOC);
 
-$query = 'select * from car_category';
+$query = "select * from table(all_car())";
 $result = $conn->query($query)->fetchAll(PDO::FETCH_ASSOC);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
