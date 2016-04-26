@@ -2,8 +2,13 @@
 $section = 'customer';
 include 'inc\head.php';
 
-$select_query = 'select * from customer';
-$customers = $conn->query($select_query)->fetchAll(PDO::FETCH_ASSOC);
+$select_query = 'select * from table(all_customer)';
+try{
+
+	$customers = $conn->query($select_query)->fetchAll(PDO::FETCH_ASSOC);
+}catch(PDOException $e){
+	echo $e->getMessage();
+}
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
 	$name = $_POST['nameInput'];

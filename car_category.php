@@ -2,8 +2,10 @@
 $section = 'car_category';
 include 'inc\head.php';
 
-$query = 'select * from car_category order by CC_ID';
+$query = 'select * from table(all_car_category)';
 $stmt = $conn->query($query)->fetchAll(PDO::FETCH_ASSOC);
+
+select 
 
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {

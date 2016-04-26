@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a9aa99c-c6ea-4593-ab93-7498a269ddb7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/checkNric.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rent_edit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rent_return.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staff_profile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/inc/auth.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/car.php" afterPath="$PROJECT_DIR$/car.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/head.php" afterPath="$PROJECT_DIR$/inc/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/navigation.php" afterPath="$PROJECT_DIR$/inc/navigation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/car_category.php" afterPath="$PROJECT_DIR$/car_category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer.php" afterPath="$PROJECT_DIR$/customer.php" />
     </list>
     <ignored path="ADP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,46 +25,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="car.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/car.php">
+      <file leaf-file-name="customer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7034483">
-              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state vertical-scroll-proportion="-1.2830188">
+              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
               <folding>
-                <marker date="1461675978793" expanded="true" signature="60:200" placeholder="select c.car... car" />
-                <marker date="1461675978793" expanded="true" signature="278:302" placeholder="select * fro... table" />
-                <marker date="1461675978793" expanded="true" signature="278:308" placeholder="select * fro... table" />
+                <marker date="1461679301704" expanded="true" signature="71:104" placeholder="select * fro... table" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/head.php">
+      <file leaf-file-name="car_category.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/car_category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/navigation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="10" selection-start-line="0" selection-start-column="1" selection-end-line="29" selection-end-column="6" />
-              <folding />
+            <state vertical-scroll-proportion="0.20517242">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding>
+                <marker date="1461680792311" expanded="true" signature="68:105" placeholder="select * fro... table" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,9 +71,7 @@
         <option value="$PROJECT_DIR$/inc/category_edit.php" />
         <option value="$PROJECT_DIR$/category_edit.php" />
         <option value="$PROJECT_DIR$/car_edit.php" />
-        <option value="$PROJECT_DIR$/car_category.php" />
         <option value="$PROJECT_DIR$/inc/constant.php" />
-        <option value="$PROJECT_DIR$/customer.php" />
         <option value="$PROJECT_DIR$/signout.php" />
         <option value="$PROJECT_DIR$/inc/header.php" />
         <option value="$PROJECT_DIR$/login.php" />
@@ -116,6 +84,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/rent_edit.php" />
         <option value="$PROJECT_DIR$/car.php" />
+        <option value="$PROJECT_DIR$/customer.php" />
+        <option value="$PROJECT_DIR$/car_category.php" />
       </list>
     </option>
   </component>
@@ -582,20 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/car_category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08793104">
-          <caret line="3" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5275862">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/staff_profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3810345">
@@ -654,7 +610,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.46896553">
           <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding />
         </state>
@@ -662,7 +618,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/navigation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.29310346">
           <caret line="10" column="10" selection-start-line="0" selection-start-column="1" selection-end-line="29" selection-end-column="6" />
           <folding />
         </state>
@@ -670,7 +626,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/head.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.08793104">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="20" />
           <folding />
         </state>
@@ -678,12 +634,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/car.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7034483">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        <state vertical-scroll-proportion="1.2896552">
+          <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
           <folding>
             <marker date="1461675978793" expanded="true" signature="60:200" placeholder="select c.car... car" />
             <marker date="1461675978793" expanded="true" signature="278:302" placeholder="select * fro... table" />
             <marker date="1461675978793" expanded="true" signature="278:308" placeholder="select * fro... table" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2830188">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding>
+            <marker date="1461679301704" expanded="true" signature="71:104" placeholder="select * fro... table" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car_category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20517242">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <marker date="1461680792311" expanded="true" signature="68:105" placeholder="select * fro... table" />
           </folding>
         </state>
       </provider>
