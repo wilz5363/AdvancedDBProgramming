@@ -1,8 +1,11 @@
 <?php
 $section = 'car';
 include 'inc\head.php';
-$get_all = 'select c.car_id, c.car_plate, c.car_model, c.car_color, c.car_status, cc.cc_name from car c, CAR_CATEGORY cc where c.CAR_CATEGORY = cc.CC_ID';
-$show_all = $conn->query($get_all)->fetchAll(PDO::FETCH_ASSOC);
+//$get_all = 'select c.car_id, c.car_plate, c.car_model, c.car_color, c.car_status, cc.cc_name from car c, CAR_CATEGORY cc where c.CAR_CATEGORY = cc.CC_ID';
+//$show
+
+$cate_selections = $conn->query('select * from table (new_car_category_selection())')->fetchAll(PDO::FETCH_ASSOC);
+
 
 $query = "select * from table(all_car())";
 $result = $conn->query($query)->fetchAll(PDO::FETCH_ASSOC);
@@ -22,9 +25,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->bindParam(3, $color);
         $stmt->bindParam(4, $category);
         $exe = $stmt->execute();
+
+        header('location:car.php');
     } catch (PDOException $e) {
         if ($e->errorInfo[1] == '1') {
             echo 'Duplicated Car Inserted';
+        }else{
+            echo $e->getMessage();
         }
     }
 
@@ -46,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </tr>
         </thead>
         <tbody>
-        <?php foreach ($show_all as $car) { ?>
+        <?php foreach ($result as $car) { ?>
             <tr>
                 <td><?php echo $car['CAR_ID'];?></td>
                 <td><?php echo $car['CAR_PLATE'];?></td>
@@ -71,12 +78,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h4 class="modal-title">Insert New Car</h4>
             </div>
             <div class="modal-body">
-                <form action="car.php" method="post">
+                <form action="car.php" method="post" autocomplete="off">
 
                     <div class="form-group">
                         <label for="platenoInput">Plate No: </label>
                         <input type="text" name="platenoInput" id="platenoInput" class="form-control"
-                               required="required">
+                               required="required" MAXLENGTH="7">
                     </div>
 
                     <div class="form-group">
@@ -93,13 +100,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                     <div class="form-group">
                         <label for="category_select">Category: </label>
-                        <select name="category" id="category_select" class="form-control">
+                        <select name="category" id="category_select" class="form-control" required>
                             <option value=""> -- Select One --</option>
                             <?php
-                            foreach ($result as $res) {
+                            foreach ($cate_selections as $res) {
                                 ?>
                                 <option value="<?php echo $res['CC_ID']; ?>"><?php echo $res['CC_NAME']; ?></option>
-
                                 <?php
                             }
                             ?>

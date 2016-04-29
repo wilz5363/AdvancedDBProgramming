@@ -3,7 +3,7 @@ $section = 'car';
 include 'inc\head.php';
 
 $data = "";
-$query = 'select * from car_category';
+$query = 'select * from table (new_car_category_selection())';
 $result = $conn->query($query)->fetchAll(PDO::FETCH_ASSOC);
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
@@ -12,13 +12,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         exit();
     } else {
         $c_id = $_GET['id'];
-        $car = $conn->query("select * from car where car_id ='" . $c_id . "'")->fetchAll();
-        foreach ($car as $c) {
-            $data[] = $c['CAR_ID'];
-            $data[] = $c['CAR_PLATE'];
-            $data[] = $c['CAR_MODEL'];
-            $data[] = $c['CAR_COLOR'];
-        }
+        $car = $conn->prepare('begin show_one_car_proc(?,?,?,?,?,?); end;');
+        $car->bindParam(1, $c_id);
+        $car->bindParam(2, $carPlate, PDO::PARAM_INPUT_OUTPUT, 32);
+        $car->bindParam(3, $carModel, PDO::PARAM_INPUT_OUTPUT, 32);
+        $car->bindParam(4, $carColor, PDO::PARAM_INPUT_OUTPUT, 32);
+        $car->bindParam(5, $carStatus, PDO::PARAM_INPUT_OUTPUT, 32);
+        $car->bindParam(6, $carCategory, PDO::PARAM_INPUT_OUTPUT, 32);
+        $car->execute();
     }
 }
 
@@ -28,14 +29,17 @@ else if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $plate = $_POST['plateInput'];
     $color = $_POST['colorInput'];
     $model = $_POST['modelInput'];
+    $status = $_POST['statusInput'];
     $category = $_POST['category'];
+
 //    try {
-        $insert_car = $conn->prepare('begin update_car_proc(?,?,?,?,?); end;');
-        $insert_car->bindParam(5, $car_id);
+        $insert_car = $conn->prepare('begin update_car_proc(?,?,?,?,?,?); end;');
+        $insert_car->bindParam(6, $car_id);
         $insert_car->bindParam(1, $plate);
         $insert_car->bindParam(2, $model);
         $insert_car->bindParam(3, $color);
-        $insert_car->bindParam(4, $category);
+        $insert_car->bindParam(4, $status);
+        $insert_car->bindParam(5, $category);
         if ($insert_car->execute()) {
             header('Location:car.php');
             exit();
@@ -46,7 +50,6 @@ else if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 //            echo 'Duplicated Car Inserted';
 //        }
 //    }
-
 }
 ?>
 
@@ -59,30 +62,30 @@ else if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="form-group">
                     <label for="carId">Car ID: </label>
                     <input type="text" class="form-control" name="idInput" id="carId"
-                           value="<?php echo htmlspecialchars($data[0]); ?>" readonly>
+                           value="<?php echo htmlspecialchars($c_id); ?>" readonly>
                 </div>
                 <div class="form-group">
                     <label for="plateNo">Plate No: </label>
                     <input type="text" class="form-control" name="plateInput" id="plateNo"
-                           value="<?php echo htmlspecialchars($data[1]); ?>" required>
+                           value="<?php echo htmlspecialchars($carPlate); ?>" required>
                 </div>
                 <div class="form-group">
                     <label for="model">Model: </label>
                     <input type="text" class="form-control" name="modelInput" id="model"
-                           value="<?php echo htmlspecialchars($data[2]); ?>" required>
+                           value="<?php echo htmlspecialchars($carModel); ?>" required>
                 </div>
                 <div class="form-group">
                     <label for="color">Color: </label>
                     <input type="text" class="form-control" name="colorInput" id="color"
-                           value="<?php echo htmlspecialchars($data[3]); ?>" required>
+                           value="<?php echo htmlspecialchars($carColor); ?>" required>
                 </div>
                 <div class="form-group">
                     <label for="status">Status: </label>
-                    <select name="name" id="status" class="form-control" required>
+                    <select name="statusInput" id="status" class="form-control" required>
                         <option value=""> -- Select One --</option>
-                        <option value="AVAILABLE">AVAILABLE</option>
-                        <option value="NOT AVAILABLE">NOT AVAILABLE</option>
-                        <option value="MAINTENANCE">MAINTENANCE</option>
+                        <option value="AVAILABLE" <?php if($carStatus == 'AVAILABLE')echo 'selected';?>>AVAILABLE</option>
+                        <option value="NOT AVAILABLE" <?php if($carStatus == 'NOT AVAILABLE')echo 'selected';?> disabled>NOT AVAILABLE</option>
+                        <option value="MAINTENANCE" <?php if($carStatus == 'MAINTENANCE')echo 'selected';?> >MAINTENANCE</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -92,7 +95,7 @@ else if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <?php
                         foreach ($result as $res) {
                             ?>
-                            <option value="<?php echo $res['CC_ID']; ?>"><?php echo $res['CC_NAME']; ?></option>
+                            <option value="<?php echo $res['CC_ID'];?>"<?php if($carCategory == $res['CC_ID']) echo 'selected';?>><?php echo $res['CC_NAME']; ?></option>
 
                             <?php
                         }

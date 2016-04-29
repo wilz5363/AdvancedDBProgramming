@@ -60,7 +60,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                     <td><?php echo $customer['CUSTOMER_CITY'];?></td>
                     <td><?php echo $customer['CUSTOMER_FREE_RIDE'];?></td>
                     <td><?php echo $customer['CREATED_ON'];?></td>
-                    <td><a class="btn btn-info" href="customer_edit.php?=<?php echo $customer['CUSTOMER_ID'];?>">Edit</a></td>
+                    <td><a class="btn btn-info" href="customer_edit.php?custId=<?php echo $customer['CUSTOMER_ID'];?>">Edit</a></td>
                 </tr>
             <?php } ?>
     	</tbody>
@@ -77,7 +77,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 				<h4 class="modal-title">New Customer</h4>
 			</div>
 			<div class="modal-body">
-				<form action="" method="post" role="form">
+				<form action="" method="post" role="form" autocomplete="off">
 					<div class="form-group">
 						<label for="customerName">Name: </label>
 						<input type="text" class="form-control" name="nameInput" id="customerName" required">

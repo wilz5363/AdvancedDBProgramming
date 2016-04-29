@@ -5,9 +5,6 @@ include 'inc\head.php';
 $query = 'select * from table(all_car_category)';
 $stmt = $conn->query($query)->fetchAll(PDO::FETCH_ASSOC);
 
-select 
-
-
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $cate_name = $_POST['nameInput'];
     $price = $_POST['priceInput'];
@@ -19,7 +16,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->bindParam(1, $cate_name);
         $stmt->bindParam(2, $price);
         $stmt->execute();
-        echo '<script>alert("Insert new category success.")</script>';
         header('Location:http://localhost/ADP/car_category.php');
         exit();
     }catch(Exception $e){
@@ -65,7 +61,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 				<h4 class="modal-title">Modal title</h4>
 			</div>
 			<div class="modal-body">
-				<form action="" method="post" role="form">
+				<form action="" method="post" role="form" autocomplete="off">
 					<div class="form-group">
 						<label for="category_name">Category Name: </label>
 						<input type="text" class="form-control" name="nameInput" id="category_name" required>
