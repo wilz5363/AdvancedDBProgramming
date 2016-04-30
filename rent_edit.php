@@ -100,38 +100,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                         </div>
                     </div>
                 </div>
-
-
                 <input type="submit" class="btn btn-primary btn-block">
             </form>
         </div>
     </div>
 </div>
-<script>
-    function searchCustomer(){
-        var nric = document.getElementById("nric");
-        if(nric.value.trim() != ""){
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function(){
-                if(xmlhttp.readyState == 4 && xmlhttp.status==200){
-                    if(xmlhttp.responseText == "false"){
-                        document.getElementById("nric_error").innerHTML = "No such NRIC exist.";
-                        document.getElementById("custName").value = "";
-                        document.getElementById("custId").value = "";
-                    }else{
-                        var result = JSON.parse(xmlhttp.responseText);
-                        document.getElementById("nric_error").innerHTML = "";
-                        document.getElementById("custId").value = result.CUSTOMER_ID;
-                        document.getElementById("custName").value = result.CUSTOMER_NAME;
-
-                    }
-                }
-            };
-            xmlhttp.open("GET","checkNric.php?q=" + nric.value, true);
-            xmlhttp.send();
-        }
-    }
-</script>
+<script src="inc/js/script.js"></script>
 
 <?php
 include 'inc\footer.php';

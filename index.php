@@ -62,20 +62,57 @@ $rentals = $conn->query('select * from show_rent')->fetchAll(PDO::FETCH_ASSOC);
 			</div>
 			<div class="modal-body">
 				<form action="" method="post" role="form">
-					<div class="form-group">
-						<label for=""></label>
-						<input type="text" class="form-control" name="" id="" placeholder="Input...">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label for="nric">Customer NRIC:</label>
+								<span id="nric_error" style="color: red"></span> <input type="text" class="form-control" name="custNricInput" id="nric"  onblur="searchCustomer()" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="custId">Customer ID: </label>
+								<input type="text" class="form-control" name="custIdInput" id="custId" readonly required>
+							</div>
+							<div class="form-group">
+								<label for="custName">Customer Name: </label>
+								<input type="text" class="form-control" name="custNameInput" id="custName" readonly required>
+							</div>
+							<div class="form-group">
+								<label for="carPlate">Car Plate: </label>
+								<span id="carPlate_error" style="color: red"><input type="text" class="form-control" name="carPlateInput" id="carPlate" onblur="searchModel()"required><span id="errorSpan"></span>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="carModel">Car Model: </label>
+<!--								<input type="text" class="form-control" name="carModelInput" id="carModel" onblur="searchCarColor()" required>-->
+								<select name="carModelInput" id="carModel" class="form-control" disabled>
+
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="carColor">Car Color: </label>
+								<input type="text" class="form-control" name="carColorInput" id="carColor" onblur="searchCarCategory()" required>
+							</div>
+							<div class="form-group">
+								<label for="carCategory">Car Category: </label>
+								<input type="text" class="form-control" name="carCategoryInput" id="carCategory" required>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label for="price">Price (Per Hour): </label>
+								<input type="text" class="form-control" name="priceInput" id="price" readonly required>
+							</div>
+						</div>
 					</div>
-                    <div class="form-group">
-                        <label for=""></label>
-                        <input type="text" class="form-control" name="" id="" placeholder="Input...">
-                    </div>
-					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="submit" class="btn btn-primary btn-block">Submit</button>
 				</form>
 			</div>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-
+<script src="inc/js/script.js"></script>
 <?php include 'inc\footer.php';?>
