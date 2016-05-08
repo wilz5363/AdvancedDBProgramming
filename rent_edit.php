@@ -74,7 +74,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                         <div class="form-group">
                             <label for="carPlate">Car Plate: </label>
                             <input type="text" class="form-control" name="carPlateInput" id="carPlate"
-                                   value="<?php echo htmlspecialchars($car_plate); ?>" onblur=""required><span id="errorSpan"></span>
+                                   value="<?php echo htmlspecialchars($car_plate); ?>"  onblur="searchCarPlate()" required><span id="errorSpan"></span>
                         </div>
                     </div>
                     <div class="col-md-6">
